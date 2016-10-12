@@ -22,7 +22,6 @@ var displayedNotif = false;
     });
 
     $('.list-notifications').on('click', 'li.unread', function () {
-        console.log($(this));
        $(this).addClass('read').removeClass('unread');
     });
 

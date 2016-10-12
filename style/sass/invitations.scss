@@ -1,0 +1,86 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+
+  header {
+    background-color: #365cad;
+
+    .logo {
+      background-image: url(../moog-logo-top.png);
+      background-position: 0 0;
+      width: 125px;
+      height: 55px;
+      display: inline-block;
+      vertical-align: middle;
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+
+    .notify {
+      text-align: right;
+      cursor: pointer;
+
+
+      span {
+        margin: 20px 0px 0 -34px;
+        color: #fff;
+        font-size: .9em;
+        font-weight: 700;
+        position: absolute;
+        z-index: 10;
+      }
+
+      .fa-bell {
+        color: #ffffff;
+        font-size: 2.3em;
+        text-decoration: none;
+        margin: 11px 10px 0 0;
+        &.notice{
+          color: #E9417D;
+        }
+      }
+
+    }
+  }
+
+main {
+  .box-list {
+    &.box-hidden {
+      width: 0;
+      padding: 0;
+      height: 0;
+    }
+    overflow-x: hidden;
+    max-width: 400px;
+    .list-notifications {
+      background-color: #cccccc;//#365cad;
+      margin-left: 400px;
+      padding: 0;
+      transition: margin-left 1s ease-out;
+      width: 100%;
+      &.show {
+        margin-left: 15px;
+      }
+      li {
+        padding: 10px;
+        &.unread{
+          background-color: #dedede;
+        }
+        list-style: none;
+        a {
+
+        }
+        h4 {
+          display: inline-block;
+        }
+        .sig_id {
+          float: inherit;
+        }
+        .time {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+
